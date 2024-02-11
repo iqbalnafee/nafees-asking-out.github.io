@@ -10,9 +10,10 @@ noButton.addEventListener("mouseover", () => {
 });
 
 yesButton.addEventListener("click", () => {
-    popup.style.display = "block";
+    
     document.getElementById("gif").src = "images/yay-kitty.gif";
     buttons.style.display ="none";
+    popup.style.display = "block";
 });
 
 // popup.addEventListener("click", () => {
