@@ -11,13 +11,13 @@ noButton.addEventListener("mouseover", () => {
 
 yesButton.addEventListener("click", () => {
     popup.style.display = "block";
-    document.getElementById("gif").src = "../images/yay-kitty.gif";
+    document.getElementById("gif").src = "images/yay-kitty.gif";
     buttons.style.display ="none";
 });
 
-popup.addEventListener("click", () => {
-    popup.style.display = "none";
-});
+// popup.addEventListener("click", () => {
+//     popup.style.display = "none";
+// });
 
 // Hide the popup initially
 popup.style.display = "none";
