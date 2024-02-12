@@ -2,6 +2,7 @@ const noButton = document.getElementById("no-btn");
 const yesButton = document.getElementById("yes-btn");
 const popup = document.getElementById("popup");
 const buttons = document.getElementById("buttons");
+const gif = document.getElementById("gif");
 
 noButton.addEventListener("mouseover", () => {
     noButton.style.position = "absolute";
@@ -11,14 +12,9 @@ noButton.addEventListener("mouseover", () => {
 
 yesButton.addEventListener("click", () => {
     
-    document.getElementById("gif").src = "images/yay-kitty.gif";
+    gif.src = "images/yay-kitty.gif";
     buttons.style.display ="none";
-    popup.style.display = "block";
+    popup.style.marginTop = (gif.getBoundingClientRect().top-100)+'px'
+    popup.style.display = "flex";
 });
 
-// popup.addEventListener("click", () => {
-//     popup.style.display = "none";
-// });
-
-// Hide the popup initially
-popup.style.display = "none";
